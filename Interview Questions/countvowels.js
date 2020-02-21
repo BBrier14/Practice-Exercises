@@ -1,3 +1,6 @@
+// ----- Count the vowels in a given string -----//
+
+// Method 1
 var countVowels = function(str) {
 	var count = 0;
 	var input = str.toLowerCase();
@@ -9,6 +12,7 @@ var countVowels = function(str) {
 	return count;
 };
 
+// Method 2
 var countVowelsAnother = function(str) {
 	var count = 0;
 	var input = str.toLowerCase();
@@ -21,6 +25,7 @@ var countVowelsAnother = function(str) {
 	return count;
 };
 
+// Regular Expression
 var regexImplementation = function(str) {
 	var regex = /[aeiou]/g;
 	var result = str.match(regex);
